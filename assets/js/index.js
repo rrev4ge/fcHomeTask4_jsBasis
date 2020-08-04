@@ -49,7 +49,6 @@ variableTasks();
 
 
 // Prompt tasks:
-
 function promptTasks() {
    console.log("\nPrompt Tasks:\n\n");
    
@@ -58,9 +57,9 @@ function promptTasks() {
         let number = prompt("Возведение в квадрат, ведите число:");
         number = Number(number);
         if (number) {
-            console.log("1) squaring result: " + (number**2));   
+            console.log("1) Squaring result: " + (number**2));   
         } else {
-            console.log("1) squaring result: Your value is incorrect");
+            console.log("1) Squaring result: Your value is incorrect");
         };
         
     };
@@ -119,3 +118,32 @@ function promptTasks() {
 };
   
 promptTasks();
+
+
+
+// Condition Tasks:
+function conditionTasks() {
+    console.log("\nCondition Tasks:\n\n");
+
+
+};
+
+conditionTasks();
+
+// Loops Tasks:
+function loopsTasks() {
+    console.log("\nLoops Tasks:\n\n");
+    
+
+};
+
+loopsTasks();
+
+
+// Function Task isAdult:
+function isAdult() {
+    console.log("\nFunction Task isAdult:\n\n");
+
+}
+
+isAdult();
