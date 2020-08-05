@@ -125,6 +125,67 @@ promptTasks();
 function conditionTasks() {
     console.log("\nCondition Tasks:\n\n");
 
+    // 1) Value 10 Condition 
+    function valueCondition() {
+        let variable = prompt("Введите значение переменной:");
+        variable = Number(variable);
+        if (variable == 10) {
+            console.log("1) Squaring result: Верно");   
+        } else {
+            console.log("1) Squaring result: Неверно");
+        };
+        
+    };
+
+    valueCondition();
+
+    // 2) Boolean condition
+    function booleanCondition() {
+        console.log("2) Boolean condition:");
+        let test = true;
+        for (let i = 1; i <= 2; i++) {
+            console.log(` .${i}) if test = ${test}:`);
+            if (test) {
+                console.log("     Верно");   
+            } else {
+                console.log("     Неверно");
+            };
+            
+            if (!test) {
+                console.log("     Верно");   
+            } else {
+                console.log("     Неверно");
+            }; 
+
+            test = false;
+        };
+        
+    
+    };
+
+
+    booleanCondition();
+
+    // 3) Purchase sum with sale 
+    function sumWithSale() {
+        
+        let sum = prompt("Введите сумму покупки:");
+        sum = Number(sum);
+        let sale;
+        if (sum > 500 && sum < 800) {
+            sale = 0.03;
+        } else if (sum > 800) {
+            sale = 0.05;
+        } else {
+            sale = 0;
+        };
+        sum = sum - (sum * sale);
+        let viewSale = sale * 100;
+        alert(`Сумма покупки с учетом скидки - ${viewSale}% составляет: ${sum} грн.`);
+        console.log(`3) Purchase sum with sale ${viewSale}% : ${sum} uah.`);
+    }
+
+    sumWithSale();
 
 };
 
